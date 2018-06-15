@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#"
+     xml:base="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:untitled-ontology-24="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#abordaOntologia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#abordaOntologia">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#abordaProveniencia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#abordaProveniencia">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#anoPublicacao -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#anoPublicacao">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#eAutorDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#eAutorDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#publicadaEm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#publicadaEm"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#AnoPublicacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#AnoPublicacao">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoOntologia"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoProveniencia"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#AnoPublicacao"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoOntologia"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoProveniencia"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#AnoPublicacao"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoOntologia"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoProveniencia"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#AnoPublicacao"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoOntologia"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoProveniencia"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoOntologia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoOntologia">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#AnoPublicacao"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoProveniencia"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoProveniencia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoProveniencia">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#AnoPublicacao"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoOntologia"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Abla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Abla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+        <eAutorDe rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016-4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Ambas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Ambas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoProveniencia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#CEUR_Workshop_Proceedings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#CEUR_Workshop_Proceedings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Dominio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Dominio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoOntologia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Frank -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Frank">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+        <eAutorDe rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016-5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Fusion_Engineering_and_Design -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Fusion_Engineering_and_Design">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#International_Provenance_and_Annotation_Workshop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#International_Provenance_and_Annotation_Workshop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal_of_Cheminformatics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal_of_Cheminformatics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Merkys -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Merkys">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+        <eAutorDe rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017-3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Miksa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Miksa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+        <eAutorDe rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017-2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#OTM_Confederated_International_Conferences -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#OTM_Confederated_International_Conferences">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Prospectiva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Prospectiva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoProveniencia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Retrospectiva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Retrospectiva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoProveniencia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Scientific_Data_Summit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Scientific_Data_Summit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Stillman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Stillman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+        <eAutorDe rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016-8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Tarefa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Tarefa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#TipoOntologia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Valdez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Valdez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+        <eAutorDe rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017-6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Web_Semantics_Science_Services_and_Agentson_the_World_Wide_Web -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Web_Semantics_Science_Services_and_Agentson_the_World_Wide_Web">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Wu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Wu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+        <eAutorDe rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016-7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Zhang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Zhang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Autor"/>
+        <eAutorDe rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017-1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#AnoPublicacao"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016-4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+        <abordaOntologia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Tarefa"/>
+        <abordaProveniencia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Prospectiva"/>
+        <anoPublicacao rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016"/>
+        <publicadaEm rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Fusion_Engineering_and_Design"/>
+        <rdfs:comment>Link anotação: https://github.com/luizgdias/review/blob/master/PDFs%20anota%C3%A7%C3%B5es/2016%20Anota%C3%A7%C3%A3o%204%20Abla.pdf</rdfs:comment>
+        <rdfs:comment>Link trabalho completo: https://goo.gl/TupakW</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016-5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016-5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+        <abordaOntologia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Dominio"/>
+        <abordaProveniencia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Retrospectiva"/>
+        <anoPublicacao rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016"/>
+        <publicadaEm rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#CEUR_Workshop_Proceedings"/>
+        <rdfs:comment>Link anotações: https://github.com/luizgdias/review/blob/master/PDFs%20anota%C3%A7%C3%B5es/2016%20Anota%C3%A7%C3%A3o%205%20Frank.pdf</rdfs:comment>
+        <rdfs:comment>Link trabalho completo: https://goo.gl/s8j3BN</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016-7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016-7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+        <abordaOntologia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Tarefa"/>
+        <abordaProveniencia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Retrospectiva"/>
+        <anoPublicacao rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016"/>
+        <publicadaEm rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#International_Provenance_and_Annotation_Workshop"/>
+        <rdfs:comment>Link anotações: https://github.com/luizgdias/review/blob/master/PDFs%20anota%C3%A7%C3%B5es/2016%20Anota%C3%A7%C3%A3o%207%20Wu.pdf</rdfs:comment>
+        <rdfs:comment>Link texto completo: https://goo.gl/XoeH19</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016-8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016-8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+        <abordaOntologia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Tarefa"/>
+        <abordaProveniencia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Retrospectiva"/>
+        <anoPublicacao rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2016"/>
+        <publicadaEm rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Scientific_Data_Summit"/>
+        <rdfs:comment>Link anotações: https://github.com/luizgdias/review/blob/master/PDFs%20anota%C3%A7%C3%B5es/2016%20Anota%C3%A7%C3%A3o%208%20Stillerman.pdf</rdfs:comment>
+        <rdfs:comment>Link trabalho completo: https://goo.gl/m1EFFw</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#AnoPublicacao"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+        <abordaOntologia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Dominio"/>
+        <abordaProveniencia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Ambas"/>
+        <anoPublicacao rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017"/>
+        <publicadaEm rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#6th_International_Conference_on_Agro-Geoinformatics"/>
+        <rdfs:comment>Link da anotação: https://github.com/luizgdias/review/blob/master/PDFs%20anota%C3%A7%C3%B5es/2017%20Anota%C3%A7%C3%A3o%201%20%20Zhang.pdf</rdfs:comment>
+        <rdfs:comment>Link do trabalho completo: https://goo.gl/dH5R9z</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+        <abordaOntologia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Tarefa"/>
+        <abordaProveniencia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Ambas"/>
+        <anoPublicacao rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017"/>
+        <publicadaEm rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Web_Semantics_Science_Services_and_Agentson_the_World_Wide_Web"/>
+        <rdfs:comment>Link da anotação: https://github.com/luizgdias/review/blob/master/PDFs%20anota%C3%A7%C3%B5es/2017%20Anota%C3%A7%C3%A3o%202%20Miksa.pdf</rdfs:comment>
+        <rdfs:comment>Link do trabalho completo: https://goo.gl/w8KqCN</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017-3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+        <abordaOntologia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Dominio"/>
+        <abordaProveniencia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Retrospectiva"/>
+        <anoPublicacao rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017"/>
+        <publicadaEm rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal_of_Cheminformatics"/>
+        <rdfs:comment>Link da anotação: https://github.com/luizgdias/review/blob/master/PDFs%20anota%C3%A7%C3%B5es/2017%20Anota%C3%A7%C3%A3o%203%20Merkys.pdf</rdfs:comment>
+        <rdfs:comment>Link do trabalho completo: https://goo.gl/dH5R9z</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017-6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017-6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Pesquisa"/>
+        <abordaOntologia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Dominio"/>
+        <abordaProveniencia rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Prospectiva"/>
+        <anoPublicacao rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#2017"/>
+        <rdfs:comment>Link anotação: https://github.com/luizgdias/review/blob/master/PDFs%20anota%C3%A7%C3%B5es/2017%20Anota%C3%A7%C3%A3o%206%20Valdez.pdf</rdfs:comment>
+        <rdfs:comment>Link trabalho completo: https://goo.gl/8uZaRY</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#6th_International_Conference_on_Agro-Geoinformatics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#6th_International_Conference_on_Agro-Geoinformatics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luizg/ontologies/2018/5/untitled-ontology-24#Journal"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
